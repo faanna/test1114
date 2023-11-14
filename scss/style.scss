@@ -1,13 +1,14 @@
 @charset "utf-8";
 
 //common
-@import "./common.scss/reset";
-@import "./common.scss/header";
-@import "./common.scss/footer";
+@import './common/reset';
+@import './common/header';
+@import './common/footer';
+@import './common/sub_layout';
 
 //main
-@import "./main.scss/visual";
-@import "./main.scss/news";
-@import "./main.scss/brand";
-@import "./main.scss/banner";
-@import "./main.scss/comments";
+@import './main.scss/visual';
+@import './main.scss/news';
+@import './main.scss/brand';
+@import './main.scss/banner';
+@import './main.scss/comments';

@@ -1,0 +1,51 @@
+#comments {
+	width: 100%;
+	padding: 150px 0;
+	background-color: #ddd;
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+		h2 {
+			font: bold 24px/1 'arial';
+			color: #555;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		ul {
+			width: 100%;
+			li {
+				width: 100%;
+				border: 1px solid #111;
+				padding: 15px 20px;
+				margin-bottom: 20px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				a {
+					font: 12px/1 'arial';
+					color: #555;
+					text-transform: uppercase;
+				}
+				span {
+					font: 12px/1 'arial';
+					color: #888;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1179px) {
+	#comments {
+		padding: 100px 30px;
+		.inner {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#comments {
+		// 없음
+	}
+}

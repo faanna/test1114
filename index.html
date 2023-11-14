@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>기업형 레이아웃 모델</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/c12878d3ba.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- 일관성있는 레이아웃이 중요 => ux -->
+		<header id="header">
+			<div class="inner">
+				<h1>
+					<a href="index.html"> LOGO </a>
+				</h1>
+				<!-- 표기법 : 
+    스네이크 표기법 : menu_web
+    카멜 표기법 : menuWeb
+-->
+				<nav class="menuWeb">
+					<ul id="gnb">
+						<li><a href="html/department.html">조직도</a></li>
+						<li><a href="html/youtube.html">유튜브</a></li>
+						<li><a href="html/community.html">커뮤니티</a></li>
+						<li><a href="html/gallery.html">갤러리</a></li>
+						<li><a href="html/location.html">찾아오시는길</a></li>
+					</ul>
+					<ul class="util">
+						<li><a href="#">contact</a></li>
+						<li><a href="#">help</a></li>
+						<li><a href="#">login</a></li>
+						<li><a href="html/join.html">join</a></li>
+						<li><a href="#">sitemap</a></li>
+					</ul>
+				</nav>
+				<a href="#" class="btnCall">
+					<!-- 햄버거버튼이 됩니다 -->
+					<span>메뉴호출</span>
+				</a>
+				<nav class="menuMo">
+					<h2>
+						<a href="index.html">LOGO</a>
+						<span>UI/UX Development</span>
+					</h2>
+					<ul id="gnbMo">
+						<li><a href="html/department.html">조직도</a></li>
+						<li><a href="html/youtube.html">유튜브</a></li>
+						<li><a href="html/community.html">커뮤니티</a></li>
+						<li><a href="html/gallery.html">갤러리</a></li>
+						<li><a href="html/location.html">찾아오시는길</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<figure id="visual">
+			<video src="img/visual.mp4" autoplay loop muted></video>
+			<div class="inner">
+				<h2>INNOVATION</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sequi
+					omnis animi modi molestiae, soluta recusandae molestias autem
+					perferendis voluptas accusamus vero. Similique, unde voluptatem autem
+					modi libero expedita itaque.
+				</p>
+				<a href="#">View my Portfolio</a>
+			</div>
+		</figure>
+		<section id="news">
+			<div class="inner">
+				<h2>RECENT NEWS</h2>
+				<div class="wrap">
+					<article>
+						<div class="pic">
+							<img src="img/news1.jpg" alt="회사건물을 나타낸 사진" />
+						</div>
+						<h3>Lorem, ipsum.</h3>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Deleniti, minima!
+						</p>
+					</article>
+					<article>
+						<div class="pic">
+							<img src="img/news2.jpg" alt="회사건물을 나타낸 사진" />
+						</div>
+						<h3>Lorem, ipsum.</h3>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Deleniti, minima!
+						</p>
+					</article>
+					<article>
+						<div class="pic">
+							<img src="img/news3.jpg" alt="회사건물을 나타낸 사진" />
+						</div>
+						<h3>Lorem, ipsum.</h3>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Deleniti, minima!
+						</p>
+					</article>
+					<article>
+						<div class="pic">
+							<img src="img/news4.jpg" alt="회사건물을 나타낸 사진" />
+						</div>
+						<h3>Lorem, ipsum.</h3>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Deleniti, minima!
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section id="brand">
+			<div class="inner">
+				<h2>BRAND IDENTITY</h2>
+				<div class="wrap">
+					<article>
+						<i class="fa-solid fa-barcode"></i>
+						<h3>BRAND IDENTITY</h3>
+						<p>Lorem ipsum dolor sit.</p>
+						<a href="#">VIEW DETAIL</a>
+					</article>
+
+					<article>
+						<img src="img/brand1.jpg" alt="해당브랜드에서 판매하는 아이템" />
+					</article>
+					<article>
+						<img src="img/brand2.jpg" alt="해당브랜드에서 판매하는 아이템" />
+					</article>
+					<article>
+						<img src="img/brand3.jpg" alt="해당브랜드에서 판매하는 아이템" />
+					</article>
+				</div>
+			</div>
+		</section>
+		<section id="banner">
+			<div class="inner">
+				<h2>Lorem ipsum dolor sit amet.</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+					veritatis ea nemo, quam alias ipsum nam asperiores dolores. Hic sint
+					voluptatum officiis repellat ea sequi vitae. Omnis distinctio adipisci
+					culpa!
+				</p>
+			</div>
+		</section>
+		<section id="comments">
+			<div class="inner">
+				<h2>RECENT COMMENTS</h2>
+				<!-- ul>li*10>a[href="#"]{here comes title}+span{2023.11.$} -->
+				<ul>
+					<li>
+						<a href="#">here comes title</a>
+						<span>2023.11.1</span>
+					</li>
+					<li><a href="#">here comes title</a><span>2023.11.2</span></li>
+					<li><a href="#">here comes title</a><span>2023.11.3</span></li>
+					<li><a href="#">here comes title</a><span>2023.11.4</span></li>
+					<li><a href="#">here comes title</a><span>2023.11.5</span></li>
+					<li><a href="#">here comes title</a><span>2023.11.6</span></li>
+					<li><a href="#">here comes title</a><span>2023.11.7</span></li>
+					<li><a href="#">here comes title</a><span>2023.11.8</span></li>
+					<li><a href="#">here comes title</a><span>2023.11.9</span></li>
+					<li><a href="#">here comes title</a><span>2023.11.10</span></li>
+				</ul>
+			</div>
+		</section>
+		<footer id="footer">
+			<div class="inner">
+				<h2>LOGO</h2>
+				<!-- ul>li*4>a[href="#"] -->
+				<ul>
+					<li><a href="#">개인정보정책</a></li>
+					<li><a href="#">용어</a></li>
+					<li><a href="#">소비자센터</a></li>
+					<li><a href="#">contact us</a></li>
+				</ul>
+				<address>
+					주소 : 경기 부천시 부천로29번길 7, 12층(심곡동) <br />
+					전화 : 1668-5004
+				</address>
+				<p>
+					© 주식회사 우리인재개발원 / 우리컴퓨터아카데미. All Rights Reserved
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+//common
+@import "./common.scss/reset";
+@import "./common.scss/header";
+@import "./common.scss/footer";
+
+//main
+@import "./main.scss/visual";
+@import "./main.scss/news";
+@import "./main.scss/brand";
+@import "./main.scss/banner";
+@import "./main.scss/comments";

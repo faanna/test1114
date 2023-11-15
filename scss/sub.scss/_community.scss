@@ -1,0 +1,143 @@
+.community {
+	.sub_visual {
+		background: url(../img/brand3.jpg);
+	}
+	.inner {
+		table {
+			width: 100%;
+			border-bottom: 2px solid #111;
+			margin-bottom: 50px;
+			tr {
+				&:nth-of-type(even) {
+					background-color: #eee;
+				}
+				&:hover {
+					background-color: lavenderblush;
+				}
+				th {
+					padding: 15px;
+					background-color: #444;
+					color: #fff;
+					&:nth-of-type(1) {
+						width: 10%;
+					}
+					&:nth-of-type(3) {
+						width: 15%;
+					}
+					&:nth-of-type(4) {
+						width: 15%;
+					}
+				}
+				td {
+					padding: 13px;
+					border-bottom: 1px solid #ddd;
+					text-align: center;
+					&:nth-of-type(2) {
+						text-align: left;
+					}
+					a {
+						color: #333;
+						font-family: 'arial';
+					}
+				}
+			}
+		}
+		.pagination {
+			width: 100%;
+			text-align: center;
+			display: flex;
+			justify-content: space-between;
+			.prev,
+			.next {
+				display: block;
+				width: 30px;
+				height: 30pd;
+				font-size: 20px;
+				color: #eee;
+				text-align: center;
+				line-height: 30px;
+				background-color: #555;
+			}
+			.numbers {
+				display: block;
+				text-align: center;
+				font-size: 0;
+				a {
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					font: 11px/30px 'arial';
+					color: #666;
+					border: 1px solid #888;
+					margin: 0 5px;
+					&:hover {
+						background-color: #666;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1179px) {
+	.community {
+		.inner {
+			table {
+				tr {
+					th {
+						&:nth-of-type(1) {
+							width: 14%;
+						}
+						&:nth-of-type(3) {
+							width: 17%;
+						}
+						&:nth-of-type(4) {
+							width: 0%;
+							display: none;
+						}
+					}
+					td {
+						&:nth-of-type(4) {
+							display: none;
+						}
+					}
+				}
+			}
+			.pagination {
+				.numbers {
+					a {
+						@for $i from 6 through 10 {
+							&:nth-of-type(#{$i}) {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.community {
+		.inner {
+			table {
+				tr {
+					th {
+						&:nth-of-type(1) {
+							width: 0%;
+							display: none;
+						}
+						&:nth-of-type(3) {
+							width: 29%;
+						}
+						&:nth-of-type(4) {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

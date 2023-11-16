@@ -1,0 +1,97 @@
+.join {
+	.sub_visual {
+		background-image: url(../img/insta2.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.inner {
+		#member {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			table {
+				border-top: 1px solid #ddd;
+				border-bottom: 1px solid #ddd;
+				margin: 50px/0px;
+				text-align: left;
+				tr {
+					width: 500px;
+					th,
+					td {
+						padding: 15px 25px;
+						border-bottom: 1px solid #ddd;
+					}
+					th {
+						width: 15%;
+						input[type='reset'],
+						input[type='submit'] {
+							width: 100%;
+							height: 60px;
+							margin: 10px;
+							font: bold 17px/40px 'arial';
+							color: #fff;
+							background-color: #000;
+							cursor: pointer;
+						}
+					}
+					td {
+						width: 800px;
+						border-left: 1px solid #fff;
+						input [type='text'],
+						input [type='password'],
+						input [type='email'],
+						select {
+							width: 100%;
+							background-color: rgba(0, 0, 0, 0.03);
+							padding: 10px;
+							border: 1px solid #fff;
+						}
+						input [type='radio'],
+						input [type='checkbox'] {
+							margin-right: 30px;
+						}
+						textarea {
+							resize: none;
+							width: 100%;
+							height: 150px;
+							padding: 10px;
+							border: 1px solid #000;
+							background-color: rgba(0, 0, 0, 0.03);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1179px) {
+	.join {
+		.inner {
+			#member {
+				table {
+					tr {
+						th {
+							width: 30%;
+							input [type='reset'],
+							input [type='submit'] {
+								width: 100%;
+							}
+						}
+						td {
+							input [type='text'],
+							input [type='password'],
+							input [type='email'] {
+								width: 100%;
+							}
+							input [type='radio'],
+							input [type='checkbox'] {
+								margin-right: 0px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

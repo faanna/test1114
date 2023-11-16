@@ -25,6 +25,10 @@ table {
   border-collapse: collapse;
 }
 
+fieldset {
+  border: none;
+}
+
 #header {
   width: 100%;
   border-bottom: 1px solid #ddd;
@@ -1050,7 +1054,7 @@ table {
 .community .inner .pagination .next {
   display: block;
   width: 30px;
-  height: 30pd;
+  height: 30px;
   font-size: 20px;
   color: #eee;
   text-align: center;
@@ -1116,6 +1120,88 @@ table {
   }
   .community .inner table tr th:nth-of-type(4) {
     display: none;
+  }
+}
+.join .sub_visual {
+  background-image: url(../img/insta2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.join .inner #member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join .inner #member table {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 50px/0px;
+  text-align: left;
+}
+.join .inner #member table tr {
+  width: 500px;
+}
+.join .inner #member table tr th,
+.join .inner #member table tr td {
+  padding: 15px 25px;
+  border-bottom: 1px solid #ddd;
+}
+.join .inner #member table tr th {
+  width: 15%;
+}
+.join .inner #member table tr th input[type=reset],
+.join .inner #member table tr th input[type=submit] {
+  width: 100%;
+  height: 60px;
+  margin: 10px;
+  font: bold 17px/40px "arial";
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+}
+.join .inner #member table tr td {
+  width: 800px;
+  border-left: 1px solid #fff;
+}
+.join .inner #member table tr td input [type=text],
+.join .inner #member table tr td input [type=password],
+.join .inner #member table tr td input [type=email],
+.join .inner #member table tr td select {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid #fff;
+}
+.join .inner #member table tr td input [type=radio],
+.join .inner #member table tr td input [type=checkbox] {
+  margin-right: 30px;
+}
+.join .inner #member table tr td textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+@media screen and (max-width: 1179px) {
+  .join .inner #member table tr th {
+    width: 30%;
+  }
+  .join .inner #member table tr th input [type=reset],
+  .join .inner #member table tr th input [type=submit] {
+    width: 100%;
+  }
+  .join .inner #member table tr td input [type=text],
+  .join .inner #member table tr td input [type=password],
+  .join .inner #member table tr td input [type=email] {
+    width: 100%;
+  }
+  .join .inner #member table tr td input [type=radio],
+  .join .inner #member table tr td input [type=checkbox] {
+    margin-right: 0px;
   }
 }
 

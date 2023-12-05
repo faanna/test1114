@@ -1204,5 +1204,71 @@ fieldset {
     margin-right: 0px;
   }
 }
+.youtube .vidList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.youtube .vidList article {
+  width: 48%;
+  height: 400px;
+  border: 1px solid #555;
+  margin-bottom: 40px;
+}
+.youtube .vidList article .pic {
+  display: block;
+  width: 100%;
+  height: 60%;
+  padding: 10px;
+}
+.youtube .vidList article .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.youtube .vidList article .con {
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+}
+.youtube .vidList article .con h2 {
+  font: bold 20px/1.2 "맑은고딕";
+  color: #444;
+  margin-bottom: 15px;
+}
+.youtube .vidList article .con p {
+  font: 14px/1.4 "맑은고딕";
+  color: #666;
+  margin-bottom: 20px;
+}
+.youtube .vidList article .con span {
+  font: bold 16px/1 "arial";
+  color: orange;
+}
+.youtube .vidList .pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.youtube .vidList .pop iframe {
+  width: 100%;
+  height: 100%;
+}
+.youtube .vidList .pop .btnClose {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,60 @@
+.location {
+	width: 100%;
+	.inner {
+		#map {
+			width: 100%;
+			height: 500px;
+			border: 1px solid #000;
+			margin-bottom: 20px;
+		}
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.traffic {
+			float: left;
+			display: flex;
+			li {
+				margin-right: 20px;
+				a {
+					display: block;
+					width: 200px;
+					height: 40px;
+					background-color: #eee;
+					font: bold 12px/40px '맑은고딕';
+					color: #000;
+					text-align: center;
+					border: 1px solid #555;
+				}
+				&.on a {
+					background-color: orange;
+					color: #fff;
+					border: none;
+				}
+			}
+		}
+		.branch {
+			float: right;
+			display: flex;
+			li {
+				margin-left: 10px;
+				a {
+					display: block;
+					width: 200px;
+					height: 40px;
+					background-color: #eee;
+					font: bold 12px/40px '맑은고딕';
+					color: #000;
+					text-align: center;
+					border: 1px solid #555;
+				}
+				&.on a {
+					background-color: orange;
+					color: #fff;
+					border: none;
+				}
+			}
+		}
+	}
+}

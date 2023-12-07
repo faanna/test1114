@@ -9,6 +9,12 @@
 			src="https://kit.fontawesome.com/c12878d3ba.js"
 			crossorigin="anonymous"
 		></script>
+		<script
+			type="text/javascript"
+			src="//dapi.kakao.com/v2/maps/sdk.js?appkey=900b321e5b230c458a3b400733f5898f"
+		></script>
+		<script defer src="../script/main.js"></script>
+		<script defer src="../script/kakao.js"></script>
 	</head>
 	<body>
 		<header id="header_sub">
@@ -55,16 +61,26 @@
 				</nav>
 			</div>
 		</header>
-		<section class="content">
+		<section class="content location">
 			<div class="sub_visual"></div>
 			<div class="inner">
 				<h1>Location <span>찾아오시는 길</span></h1>
+				<div id="map"></div>
+
+				<ul class="traffic">
+					<li><a href="#">교통정보보기</a></li>
+					<li class="on"><a href="#">교통정보끄기</a></li>
+				</ul>
+				<div class="branch">
+					<li class="on"><a href="#">본점</a></li>
+					<li><a href="#">지점1</a></li>
+					<li><a href="#">지점2</a></li>
+				</div>
 			</div>
 		</section>
 		<footer id="footer_sub">
 			<div class="inner">
 				<h2>LOGO</h2>
-				<!-- ul>li*4>a[href="#"] -->
 				<ul>
 					<li><a href="#">개인정보정책</a></li>
 					<li><a href="#">용어</a></li>

@@ -11,19 +11,20 @@
 			justify-content: center;
 			align-items: center;
 			table {
+				width: 800px;
 				border-top: 1px solid #ddd;
 				border-bottom: 1px solid #ddd;
 				margin: 50px/0px;
 				text-align: left;
 				tr {
-					width: 500px;
 					th,
 					td {
 						padding: 15px 25px;
+						height: 65px;
 						border-bottom: 1px solid #ddd;
 					}
 					th {
-						width: 15%;
+						width: 20%;
 						input[type='reset'],
 						input[type='submit'] {
 							width: 100%;
@@ -36,13 +37,34 @@
 						}
 					}
 					td {
-						width: 800px;
+						position: relative;
 						border-left: 1px solid #fff;
+						#toggleBtn {
+							width: 34px;
+							height: 34px;
+							border-radius: 50%;
+							background-color: rgba(0, 0, 0, 0.06);
+							position: absolute;
+							top: 32px;
+							right: -35px;
+							transform: translateY(-50%);
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							&::before {
+								content: '\f06e';
+								font-family: fontAwesome;
+							}
+							&.hide::before {
+								content: '\f070';
+								font-family: fontAwesome;
+							}
+						}
 						input [type='text'],
 						input [type='password'],
 						input [type='email'],
 						select {
-							width: 100%;
+							width: 50%;
 							background-color: rgba(0, 0, 0, 0.03);
 							padding: 10px;
 							border: 1px solid #fff;
@@ -58,6 +80,11 @@
 							padding: 10px;
 							border: 1px solid #000;
 							background-color: rgba(0, 0, 0, 0.03);
+						}
+						p {
+							font: 11px/1 '맑은고딕';
+							color: red;
+							margin-top: 5px;
 						}
 					}
 				}

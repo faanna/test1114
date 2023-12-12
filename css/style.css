@@ -1134,21 +1134,20 @@ fieldset {
   align-items: center;
 }
 .join .inner #member table {
+  width: 800px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   margin: 50px/0px;
   text-align: left;
 }
-.join .inner #member table tr {
-  width: 500px;
-}
 .join .inner #member table tr th,
 .join .inner #member table tr td {
   padding: 15px 25px;
+  height: 65px;
   border-bottom: 1px solid #ddd;
 }
 .join .inner #member table tr th {
-  width: 15%;
+  width: 20%;
 }
 .join .inner #member table tr th input[type=reset],
 .join .inner #member table tr th input[type=submit] {
@@ -1161,14 +1160,35 @@ fieldset {
   cursor: pointer;
 }
 .join .inner #member table tr td {
-  width: 800px;
+  position: relative;
   border-left: 1px solid #fff;
+}
+.join .inner #member table tr td #toggleBtn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 32px;
+  right: -35px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join .inner #member table tr td #toggleBtn::before {
+  content: "\f06e";
+  font-family: fontAwesome;
+}
+.join .inner #member table tr td #toggleBtn.hide::before {
+  content: "\f070";
+  font-family: fontAwesome;
 }
 .join .inner #member table tr td input [type=text],
 .join .inner #member table tr td input [type=password],
 .join .inner #member table tr td input [type=email],
 .join .inner #member table tr td select {
-  width: 100%;
+  width: 50%;
   background-color: rgba(0, 0, 0, 0.03);
   padding: 10px;
   border: 1px solid #fff;
@@ -1184,6 +1204,11 @@ fieldset {
   padding: 10px;
   border: 1px solid #000;
   background-color: rgba(0, 0, 0, 0.03);
+}
+.join .inner #member table tr td p {
+  font: 11px/1 "맑은고딕";
+  color: red;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 1179px) {
@@ -1328,6 +1353,119 @@ fieldset {
   background-color: orange;
   color: #fff;
   border: none;
+}
+
+.gallery .inner #gallery #searchBox {
+  width: 100%;
+  padding: 20px;
+  font-size: 0;
+}
+.gallery .inner #gallery #searchBox #search {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #333;
+  padding-left: 10px;
+}
+.gallery .inner #gallery #searchBox .btnSearch {
+  width: 80px;
+  height: 30px;
+  background-color: #333;
+  font: bold 12px/30px "arial";
+  color: #fff;
+  text-align: center;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  vertical-align: top;
+}
+.gallery .inner #gallery #wrap {
+  width: 100%;
+  padding: 30px;
+}
+.gallery .inner #gallery #wrap .loading {
+  width: 300px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  left: 50%;
+  z-index: 1;
+}
+.gallery .inner #gallery #wrap .loading.off {
+  opacity: 0;
+  z-index: -1;
+}
+.gallery .inner #gallery #wrap #list {
+  width: 100%;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+.gallery .inner #gallery #wrap #list.on {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.gallery .inner #gallery #wrap #list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.gallery .inner #gallery #wrap #list li {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.gallery .inner #gallery #wrap #list li div {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 5px 5px 21px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.gallery .inner #gallery #wrap #list li div a > img {
+  width: 100%;
+}
+.gallery .inner #gallery #wrap #list li div p {
+  font: 12px/1.2 "arial";
+  color: #777;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.gallery .inner #gallery #wrap #list li div span {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.gallery .inner #gallery #wrap #list li div span > img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.gallery .inner #gallery #wrap #list li div span strong {
+  font: 11px/1 "arial";
+  color: orange;
+}
+.gallery .inner #gallery aside {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .inner #gallery aside img {
+  height: 100%;
+}
+.gallery .inner #gallery aside span {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

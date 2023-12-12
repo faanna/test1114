@@ -9,6 +9,7 @@
 			src="https://kit.fontawesome.com/c12878d3ba.js"
 			crossorigin="anonymous"
 		></script>
+		<script defer src="../script/join.js"></script>
 	</head>
 	<body>
 		<header id="header_sub">
@@ -32,7 +33,7 @@
 						<li><a href="#">contact</a></li>
 						<li><a href="#">help</a></li>
 						<li><a href="#">login</a></li>
-						<li><a href="html/join.html">join</a></li>
+						<li><a href="join.html">join</a></li>
 						<li><a href="#">sitemap</a></li>
 					</ul>
 				</nav>
@@ -46,11 +47,11 @@
 						<span>UI/UX Development</span>
 					</h2>
 					<ul id="gnbMo">
-						<li><a href="html/department.html">조직도</a></li>
-						<li><a href="html/youtube.html">유튜브</a></li>
-						<li><a href="html/community.html">커뮤니티</a></li>
-						<li><a href="html/gallery.html">갤러리</a></li>
-						<li><a href="html/location.html">찾아오시는길</a></li>
+						<li><a href="department.html">조직도</a></li>
+						<li><a href="youtube.html">유튜브</a></li>
+						<li><a href="community.html">커뮤니티</a></li>
+						<li><a href="gallery.html">갤러리</a></li>
+						<li><a href="location.html">찾아오시는길</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -86,7 +87,7 @@
 								<!-- user id -->
 								<tr>
 									<th scope="row">
-										<label for="">아이디</label>
+										<label for="userid">아이디</label>
 									</th>
 									<td>
 										<input
@@ -103,11 +104,12 @@
 									</th>
 									<td>
 										<input
-											type="text"
-											name="password"
-											id="password"
+											type="password"
+											name="pwd1"
+											id="pwd1"
 											placeholder="비밀번호를 입력하세요"
 										/>
+										<div id="toggleBtn"></div>
 									</td>
 								</tr>
 								<tr>
@@ -168,7 +170,7 @@
 								</tr>
 								<!-- 가입경로 -->
 								<tr>
-									<th scope="row"></th>
+									<th scope="row">가입경로</th>
 									<td>
 										<label for="internet">인터넷</label>
 										<input
